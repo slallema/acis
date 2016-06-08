@@ -1,0 +1,6 @@
+---
+default:
+  sysdig:
+    http_proxy: ""
+    dragent:
+      customerid: ""

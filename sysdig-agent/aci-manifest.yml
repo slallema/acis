@@ -1,0 +1,15 @@
+name: blablacar.github.io/dgr/sysdig-agent:1
+aci:
+  app:
+    exec:
+      - /bin/bash
+      - -c
+      - "'/dgr/bin/prestart && /opt/draios/bin/dragent'"
+    mountPoints:
+      - name: sysdig-module
+        path: /sysdig-module
+        readOnly: false
+
+  dependencies:
+    - blablacar.github.io/dgr/aci-debian:8
+
